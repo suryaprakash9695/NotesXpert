@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us Form | NotesXpert</title>
+    <link rel="icon" href="/images/favicon/android-chrome-512x512.png">
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Get form data
+            const form = document.querySelector('.contact-form');
+            const name = form.querySelector('#name').value.trim();
+            const dob = form.querySelector('#dob').value;
+            const gender = form.querySelector('#gender').value;
+            const email = form.querySelector('#email').value.trim();
+            const phone = form.querySelector('#phone').value.trim();
+            const position = form.querySelector('#position').value;
+            const address = form.querySelector('#address').value.trim();
+            const city = form.querySelector('#city').value.trim();
+            const country = form.querySelector('#country').value.trim();
+            const education = form.querySelector('#education').value;
+            const linkedin = form.querySelector('#linkedin').value.trim();
+            const portfolio = form.querySelector('#portfolio').value.trim();
+            const previousJob = form.querySelector('#previous-job').value.trim();
+            const experience = form.querySelector('#experience').value.trim();
+
+            // Validate the form fields
+            if (!name || !dob || !gender || !email || !phone || !position || !address || !city || !country || !education || !linkedin || !portfolio || !previousJob || !experience) {
+                alert("Please fill out all required fields.");
+                return;
+            }
+
+            // Email validation
+            const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            if (!emailPattern.test(email)) {
+                alert("Please enter a valid email address.");
+                return;
+            }
+
+            // Phone validation (optional, check for valid phone number)
+            const phonePattern = /^[0-9]{10}$/;
+            if (!phonePattern.test(phone)) {
+                alert("Please enter a valid 10-digit phone number.");
+                return;
+            }
+
+            // Submit the form via AJAX
+            const formData = new FormData(form);
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: formData,
+            })
+                .then(response => response.json())
+                .then(data => {
+                    // After successful submission, show a success popup
+                    alert("Your application has been submitted successfully! We will contact you soon.. ");
+
+                    // Close the current tab and redirect to index.html
+                    window.close();
+                    window.opener.location.href = '/index.html';
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert("There was an error submitting your application. Please try again.");
+                });
+        }
+    </script>
+</head>
+
+<body style="font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0;">
+    <div
+        style="max-width: 800px; margin: 30px auto; background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+        <h2 style="text-align: center; color: #26456e; margin-bottom: 20px;">Join Us at NotesXpert</h2>
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+            <input type="hidden" name="access_key" value="16bfa268-a53d-4be7-8bea-3c7d51c19974" />
+
+            <!-- Name -->
+            <div style="margin-bottom: 20px;">
+                <label for="name" style="display: block; margin-bottom: 5px; color: #26456e;">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name"
+                    style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 5px;" required>
+            </div>
+
+            <!-- Date of Birth -->
+            <div style="margin-bottom: 20px;">
+                <label for="dob" style="display: block; margin-bottom: 5px; color: #26456e;">Date of Birth:</label>
+                <input type="date" id="dob" name="dob"
+                    style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 5px;" required>
+            </div>
+
+            <!-- Gender -->
+            <div style="margin-bottom: 20px;">
+                <label for="gender" style="display: block; margin-bottom: 5px; color: #26456e;">Gender:</label>
+                <select id="gender" name="gender"
+                    style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 5px;" required>
+                    <option value="">Select your gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+
+            <!-- Email -->
+            <div style="margin-bottom: 20px;">
+                <label for="email" style="display: block; margin-bottom: 5px; color: #26456e;">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address"
+                    style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 5px;" required>
+            </div>
+
+            <!-- Phone Number -->
+            <div style="margin-bottom: 20px;">
+                <label for="phone" style="display: block; margin-bottom: 5px; color: #26456e;">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number"
+                    style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 5px;" required>
+            </div>
+
+            <!-- Desired Position -->
+            <div style="margin-bottom: 20px;">
+                <label for="position" style="display: block; margin-bottom: 5px; color: #26456e;">Desired Post:</label>
+                <select id="position" name="position"
+                    style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 5px;" required>
+                    <option value="">Select a post</option>
+                    <option value="Content Creator">Content Creator</option>
+                    <option value="Tech Support">Tech Support</option>
+                    <option value="Community Manager">Community Manager</option>
+                </select>
+            </div>
+
+            <!-- Address -->
+            <div style="margin-bottom: 20px;">
+                <label for="address" style="display: block; margin-bottom: 5px; color: #26456e;">Address:</label>
+                <textarea id="address" name="address" placeholder="Enter your full address" rows="3"
+                    style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 5px;" required></textarea>
+            </div>
+
+            <!-- City -->
+            <div style="margin-bottom: 20px;">
+                <label for="city" style="display: block; margin-bottom: 5px; color: #26456e;">City:</label>
+                <input type="text" id="city" name="city" placeholder="Enter your city"
+                    style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 5px;" required>
+            </div>
+
+            <!-- Country -->
+            <div style="margin-bottom: 20px;">
+                <label for="country" style="display: block; margin-bottom: 5px; color: #26456e;">Country:</label>
+                <input type="text" id="country" name="country" placeholder="Enter your country"
+                    style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 5px;" required>
+            </div>
+
+            <!-- Education Level -->
+            <div style="margin-bottom: 20px;">
+                <label for="education" style="display: block; margin-bottom: 5px; color: #26456e;">Education
+                    Level:</label>
+                <select id="education" name="education"
+                    style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 5px;" required>
+                    <option value="">Select your education level</option>
+                    <option value="High School">High School</option>
+                    <option value="Associate Degree">Associate Degree</option>
+                    <option value="Bachelor's Degree">Bachelor's Degree</option>
+                    <option value="Master's Degree">Master's Degree</option>
+                    <option value="PhD">PhD</option>
+                </select>
+            </div>
+            
+            <!-- LinkedIn Profile URL -->
+            <div style="margin-bottom: 20px;">
+                <label for="linkedin" style="display: block; margin-bottom: 5px; color: #26456e;">LinkedIn Profile
+                    URL:</label>
+                <input type="url" id="linkedin" name="linkedin" placeholder="Enter your LinkedIn profile URL"
+                    style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 5px;">
+            </div>
+
+            <!-- Portfolio/Website URL -->
+            <div style="margin-bottom: 20px;">
+                <label for="portfolio" style="display: block; margin-bottom: 5px; color: #26456e;">Portfolio/Website
+                    URL:</label>
+                <input type="url" id="portfolio" name="portfolio"
+                    placeholder="Enter your portfolio or personal website URL"
+                    style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 5px;">
+            </div>
+
+            <!-- Previous Job Title -->
+            <div style="margin-bottom: 20px;">
+                <label for="previous-job" style="display: block; margin-bottom: 5px; color: #26456e;">Previous Job
+                    Title:</label>
+                <input type="text" id="previous-job" name="previous-job" placeholder="Enter your previous job title"
+                    style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 5px;">
+            </div>
+
+            <!-- Work Experience -->
+            <div style="margin-bottom: 20px;">
+                <label for="experience" style="display: block; margin-bottom: 5px; color: #26456e;">Work Experience
+                    (Years):</label>
+                <input type="number" id="experience" name="experience" placeholder="Enter your work experience in years"
+                    style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 5px;">
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit"
+                style="padding: 10px; background-color: #26456e; color: #fff; border: none; border-radius: 5px; cursor: pointer;">
+                Submit Application
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/custom.js"></script>
+    <link rel="icon" href="images/favicon/android-chrome-512x512.png">
+
+    <title>NotesXpert</title>
+    
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid" style="background-color: #26456e; padding: 10px;">
+        <div
+            style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; color: #eed9d9; gap: 60%; padding: 0 10%; text-align: center;">
+            <a href="tel:+919988998899" style="color: #eed9d9; text-decoration: none; font-size: 0.9rem; flex: 1;">
+                <i class="fas fa-phone"></i> Helpline - +91 9988998899
+            </a>
+            <a href="mailto:notesxpert@gmail.com"
+                style="color: #eed9d9; text-decoration: none; font-size: 0.9rem; flex: 1;">
+                <i class="fas fa-envelope"></i> Email - notesxpert@gmail.com
+            </a>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg"
+        style="background-color: #eed9d9; position: sticky; top: 0; z-index: 1000; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); padding: 5px 15px;">
+        <div class="container-fluid" style="display: flex; align-items: center;">
+            <!-- Brand -->
+            <a href="index.html" class="navbar-brand d-flex align-items-center"
+                style="display: flex; align-items: center;">
+                <img src="images/Screenshot 2024-11-09 154753.png" height="40"
+                    style="border-radius: 5%; margin-right: 10px;">
+                <h2 style="color: #26456e; font-size: 1.2rem; margin: 0;">NotesXpert</h2>
+            </a>
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"
+                style="border: none;">
+                <span class="navbar-toggler-icon"
+                    style="background-color: #26456e; border-radius: 3px; width: 20px; height: 2px; display: block; margin: 4px 0;"></span>
+            </button>
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse" style="flex-grow: 1;">
+                <ul class="navbar-nav d-flex justify-content-center w-100" style="gap: 15px; padding: 0; margin: 0;">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link text-center"
+                            style="color: #26456e; font-weight: 500; font-size: 0.9rem; padding: 5px;">
+                            <i class="fas fa-home me-1"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pages/about.html" class="nav-link text-center"
+                            style="color: #26456e; font-weight: 500; font-size: 0.9rem; padding: 5px;">
+                            <i class="fas fa-info-circle me-1"></i> About Us
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pages/contactus.html" class="nav-link text-center"
+                            style="color: #26456e; font-weight: 500; font-size: 0.9rem; padding: 5px;">
+                            <i class="fas fa-envelope me-1"></i> Contact Us
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pages/followus.html" class="nav-link text-center"
+                            style="color: #26456e; font-weight: 500; font-size: 0.9rem; padding: 5px;">
+                            <i class="fas fa-users me-1"></i> Follow Us
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pages/courses.html" class="nav-link text-center"
+                            style="color: #26456e; font-weight: 500; font-size: 0.9rem; padding: 5px;">
+                            <i class="fas fa-book me-1"></i> Courses
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Join Us Button -->
+            <a href="pages/joinus.html" class="btn btn-primary ms-lg-4"
+                style="background-color: #26456e; border: none; font-weight: 500; font-size: 0.8rem; padding: 6px 10px;">
+                <i class="fas fa-user-plus me-1"></i> Join Us
+            </a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Welcome Section  -->
+    <div class="container-fluid "
+        style="background-image: url('images/bg.jpg'); background-size: cover; background-position: center;width: 100%; height: 500px; position: relative;">
+        <div class="row justify-content-center align-items-center" style="height: 100%;">
+            <div class="col-12 text-center" style="z-index: 2;">
+                <h2 style="color: #26456e; font-size: 2.5em;">Welcome to NotesXpert</h2>
+                <p style="color: #26456e; font-size: 1.2em; max-width: 700px; margin: 0 auto;">At NotesXpert, we believe
+                    in making learning accessible and enjoyable. Our platform offers high-quality educational resources,
+                    study materials, and a supportive community to help you succeed academically.</p>
+                <a href="/pages/courses.html" class="btn btn-primary btn-lg mt-3"
+                    style="background-color: #26456e; color: white; border-radius: 5px; transition: background-color 0.3s, color 0.3s;"
+                    onmouseover="this.style.backgroundColor='#3a6fb0'; this.style.color='#e6e6e6';"
+                    onmouseout="this.style.backgroundColor='#26456e'; this.style.color='white';">
+                    Explore All Courses
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--welcome section ends-->
+
+
+    <!-- Mission Section -->
+    <div class="container mt-5 text-center" style="height: 200px;">
+        <h2 style="color: #26456e; margin-top: 80px;">Our Mission</h2>
+        <p style="color: #5a5a5a; font-size: 1.1em;">
+            At NotesXpert, we aim to make high-quality education accessible to everyone.
+            By providing comprehensive notes and resources, we strive to empower students
+            and lifelong learners on their academic journeys.
+        </p>
+    </div>
+    <!--Mission section ends-->
+
+    <!-- Why Choose Us Section -->
+    <div class="container" style="background-color: #e3e3e3; width: 100%; border-radius: 10px; padding: 30px 20px;">
+        <h2 class="text-center mt-5 mb-5" style="color: #26456e; font-size: 2rem; font-weight: 600;">Why Choose
+            NotesXpert?</h2>
+
+        <!-- First Row - Expert Tutors, Extensive Resources, Supportive Community -->
+        <div class="row mb-5" style="display: flex; justify-content: center;">
+            <div class="col-lg-4 col-md-6 text-center" style="margin-bottom: 30px;">
+                <i class="fas fa-graduation-cap fa-4x" style="color: #26456e;"></i>
+                <h4 style="color: #26456e; margin-top: 20px; font-size: 1.2rem; font-weight: 500;">Expert Tutors</h4>
+                <p style="color: #5a5a5a; font-size: 1rem;">Learn from experienced educators with <br>proven track
+                    records
+                    in their fields.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center" style="margin-bottom: 30px;">
+                <i class="fas fa-book-open fa-4x" style="color: #26456e;"></i>
+                <h4 style="color: #26456e; margin-top: 20px; font-size: 1.2rem; font-weight: 500;">Extensive Resources
+                </h4>
+                <p style="color: #5a5a5a; font-size: 1rem;">Access a library of high-quality notes, guides, and other
+                    learning materials.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center" style="margin-bottom: 30px;">
+                <i class="fas fa-handshake fa-4x" style="color: #26456e;"></i>
+                <h4 style="color: #26456e; margin-top: 20px; font-size: 1.2rem; font-weight: 500;">Supportive Community
+                </h4>
+                <p style="color: #5a5a5a; font-size: 1rem;">Join a community of learners and educators passionate about
+                    knowledge sharing.</p>
+            </div>
+        </div>
+        <!-- Second Row - Technology Innovation, Collaborative Work Culture, Educational Impact -->
+        <div class="row" style="display: flex; justify-content: space-between; margin-top: 40px;">
+            <div class="col-sm-4 text-center" style="margin-bottom: 30px;">
+                <i class="fas fa-laptop-code" style="font-size: 3rem; color: #26456e;"></i>
+                <h3 style="color: #26456e; font-size: 1.5rem; margin-top: 15px;">Technology Innovation</h3>
+                <p style="font-size: 1rem; color: #5a5a5a;">Be a part of cutting-edge educational tools and resources
+                    that empower students globally.</p>
+            </div>
+            <div class="col-sm-4 text-center" style="margin-bottom: 30px;">
+                <i class="fas fa-lock" style="font-size: 3rem; color: #26456e;"></i>
+                <h3 style="color: #26456e; font-size: 1.5rem; margin-top: 15px;">Secure Access</h3>
+                <p style="font-size: 1rem; color: #5a5a5a;">Enjoy secure and private access to all your educational
+                    materials, ensuring safety and privacy.</p>
+            </div>
+            <div class="col-sm-4 text-center" style="margin-bottom: 30px;">
+                <i class="fas fa-chalkboard-teacher" style="font-size: 3rem; color: #26456e;"></i>
+                <h3 style="color: #26456e; font-size: 1.5rem; margin-top: 15px;">Educational Impact</h3>
+                <p style="font-size: 1rem; color: #5a5a5a;">Help create accessible and effective learning materials that
+                    inspire the next generation of leaders.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Why Choose Us Section  ends-->
+
+    <!-- Roles and Opportunities Section -->
+    <div class="container mt-5" style="text-align: center;">
+        <h2 style="color: #26456e; margin-bottom: 20px; font-size: 2rem; font-weight: 600;">Roles We Offer</h2>
+        <p style="font-size: 1.1em; color: #5a5a5a;">Explore the different ways you can contribute to the NotesXpert
+            mission.</p>
+
+        <!-- Responsive Row with Bootstrap Grid -->
+        <div class="row mt-4">
+            <!-- Content Creator Role -->
+            <div class="col-12 col-md-4 mb-4">
+                <img src="/images/contentcreator.jpg" alt="Content Creator"
+                    style="width: 80%; height: auto; border-radius: 10px; max-height: 250px;">
+                <h4 style="color: #26456e; margin-top: 15px;">Content Creator</h4>
+                <p style="color: #5a5a5a;">Help create detailed and engaging notes, guides, and resources.</p>
+            </div>
+
+            <!-- Tech Support Role -->
+            <div class="col-12 col-md-4 mb-4">
+                <img src="/images/techsupport.png" alt="Tech Support"
+                    style="width: 80%; height: auto; border-radius: 10px; max-height: 250px;">
+                <h4 style="color: #26456e; margin-top: 15px;">Tech Support</h4>
+                <p style="color: #5a5a5a;">Assist in website development, user support, and technical troubleshooting.
+                </p>
+            </div>
+
+            <!-- Community Manager Role -->
+            <div class="col-12 col-md-4 mb-4">
+                <img src="/images/communitymanager.png" alt="Community Manager"
+                    style="width: 80%; height: auto; border-radius: 10px; max-height: 250px;">
+                <h4 style="color: #26456e; margin-top: 15px;">Community Manager</h4>
+                <p style="color: #5a5a5a;">Engage with the community manager & organize events, and foster a supportive
+                    learning
+                    environment.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Roles and Opportunities Section Ends -->
+
+
+    <!-- Testimonials Section -->
+    <div class="container py-5" style="background-color: #f9f9f9; border-radius: 10px;">
+        <h2 class="text-center" style="color: #26456e; margin-bottom: 40px;">What Our Users Say</h2>
+        <!-- Section Introduction -->
+        <p class="text-center" style="color: #555; font-size: 1.1rem; margin-bottom: 50px;">
+            Hear from our users how NotesXpert has helped them in their educational journey.
+        </p>
+
+        <!--  Carousel -->
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+
+                <!-- Testimonial 1 -->
+                <div class="carousel-item active">
+                    <div class="card p-3">
+                        <p>"NotesXpert has completely revolutionized my learning experience. Their notes are concise,
+                            comprehensive, and easy to understand. I no longer feel overwhelmed with study material.
+                            It's all streamlined, and I can focus on the important details!"</p>
+                        <p class="text-end"><strong>- Surya</strong></p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="carousel-item">
+                    <div class="card p-3">
+                        <p>"Thanks to NotesXpert, I passed my exams with flying colors. Their notes and resources are a
+                            lifesaver. They break down complex concepts into simple, understandable language. I feel
+                            confident going into every exam!"</p>
+                        <p class="text-end"><strong>- Aman Singh</strong></p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="carousel-item">
+                    <div class="card p-3">
+                        <p>"The best platform for study resources. I recommend it to all students and educators alike to
+                            choose NotesXpert. The platform is easy to navigate, and the content is always up-to-date.
+                            It's my go-to tool for exam prep!"</p>
+                        <p class="text-end"><strong>- Gunj Pratap</strong></p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="carousel-item">
+                    <div class="card p-3">
+                        <p>"I found everything I needed to excel in my exams. The resources are excellent and
+                            well-organized. I love how the notes are structured with clear headings and summaries. It
+                            makes studying more efficient and less stressful!"</p>
+                        <p class="text-end"><strong>- Riya Patel</strong></p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 5 -->
+                <div class="carousel-item">
+                    <div class="card p-3">
+                        <p>"NotesXpert is my go-to resource for every subject. Their notes are detailed and easy to
+                            follow. The variety of resources available is incredible – from simple summaries to
+                            deep-dives into difficult topics, it’s all here!"</p>
+                        <p class="text-end"><strong>- Ankit Sharma</strong></p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 6 -->
+                <div class="carousel-item">
+                    <div class="card p-3">
+                        <p>"The community at NotesXpert is amazing. It's a great place to connect with like-minded
+                            learners and experts. The discussions and feedback from other students help me stay
+                            motivated and on track with my studies!"</p>
+                        <p class="text-end"><strong>- Priya Sharma</strong></p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 7 (Added Content) -->
+                <div class="carousel-item">
+                    <div class="card p-3">
+                        <p>"As a teacher, I highly recommend NotesXpert to my students. The notes are not only
+                            comprehensive, but they also encourage critical thinking. The platform helps students
+                            understand the subject matter rather than just memorizing facts!"</p>
+                        <p class="text-end"><strong>- Dr. Neha Verma</strong></p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 8 (Added Content) -->
+                <div class="carousel-item">
+                    <div class="card p-3">
+                        <p>"I was struggling with my programming assignments, but NotesXpert came to my rescue. The
+                            coding notes and explanations helped me get a better understanding of complex programming
+                            concepts. I passed with confidence!"</p>
+                        <p class="text-end"><strong>- Rajeev Kumar</strong></p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+        </div>
+    </div>
+    <!-- Testimonials Section End -->
+
+
+
+
+    <!-- FAQ Section -->
+    <div class="container" style="background-color: #e3e3e3; border-radius: 10px; padding: 30px; margin-top: 50px;">
+        <h2 class="text-center" style="color: #26456e; margin-bottom: 40px;">Frequently Asked Questions</h2>
+        <div class="accordion" id="faqAccordion" style="width: 80%; margin: auto;">
+
+            <!-- FAQ Item 1 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faq1">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                        What is NotesXpert?
+                    </button>
+                </h2>
+                <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="faq1"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        NotesXpert is an educational platform offering high-quality notes, courses, and resources for
+                        students and learners to enhance their knowledge and academic performance.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faq2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                        How do I access a course?
+                    </button>
+                </h2>
+                <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        You can browse our courses from the homepage, click on the course you're interested in, and
+                        download it
+                        directly from our website.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faq3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                        Does NotesXpert provide career opportunities?
+                    </button>
+                </h2>
+                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Yes, NotesXpert offers career opportunities in content creation, tech management, and community
+                        management. You can apply via the <a href="pages/joinus.html"
+                            style="text-decoration:none; color: #26456e;">Join Us</a> page on our website.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="faq4">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                        Can I access NotesXpert on my mobile device?
+                    </button>
+                </h2>
+                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="faq4"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Yes, NotesXpert is fully optimized for both desktop and mobile devices, ensuring you can access
+                        all
+                        content on the go, anywhere, anytime.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- FAQ Section Ends -->
+
+
+    <!-- Newsletter Section -->
+    <div class="container-fluid text-center">
+        <div class="row mt-5">
+
+        </div>
+        <h2 style="color: #26456e; margin-bottom: 20px;">Stay Updated with NotesXpert</h2>
+        <p style="color: #5a5a5a;">Subscribe to our newsletter and never miss out on the latest resources and updates!
+        </p>
+        <div class="mb-3" style="max-width: 500px; margin: 0 auto; text-align: center;">
+            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="16bfa268-a53d-4be7-8bea-3c7d51c19974" />
+                <input type="text" name="name" class="form-control mb-2" placeholder="Enter your name"
+                    aria-label="Enter your name" style="width: 100%;" required>
+                <input type="email" name="email" class="form-control mb-2" placeholder="Enter your email"
+                    aria-label="Enter your email" style="width: 100%;" required>
+                <button class="btn" type="submit" style="background-color: #26456e; color: #eed9d9; width: 100%;">
+                    Subscribe
+                </button>
+            </form>
+        </div>
+
+
+
+    </div>
+    <!-- Newsletter Section ends -->
+
+    <!-- Footer -->
+    <div class="container-fluid  py-5" style="margin-top: 90px; background-color: #26456e;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4" style="text-align: center;">
+                    <a href="index.html">
+                        <img src="images/Screenshot 2024-11-09 154753.png" height="60" style="border-radius: 5%;">
+                    </a>
+                    <h2 style="color: #eed9d9;">
+                        NotesXpert
+                    </h2>
+                    <p style="color: #eed9d9; text-align:left; justify-content: center;">At
+                        NotesXpert, we make learning accessible, efficient,
+                        and enjoyable.Our platform
+                        provides high-quality notes and resources tailored
+                        for students and lifelong learners.
+                    </p>
+                </div>
+                <div class="col-sm-2 mt-5 mx-5" style="color: #eed9d9;">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Useful Links
+                    </h6>
+                    <ul style="list-style-type: none; padding-left: 0;">
+                        <li class="mb-3">
+                            <a href="index.html" class="text-reset" style="text-decoration: none;">
+                                <i class="fas fa-home"></i> Home
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="pages/about.html" class="text-reset" style="text-decoration: none;">
+                                <i class="fas fa-info-circle"></i> About Us
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="pages/contactus.html" class="text-reset" style="text-decoration: none;">
+                                <i class="fas fa-envelope"></i> Contact Us
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="pages/courses.html" class="text-reset" style="text-decoration: none;">
+                                <i class="fas fa-book"></i> Courses
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 mt-5" style="color: #eed9d9;">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                    <p><i class="fas fa-home"></i> Greater Noida</p>
+                    <p>
+                        <i class="fas fa-envelope"></i> notesxpert@gmail.com
+                    </p>
+                    <p><i class="fas fa-phone"></i> +91 9695167669</p>
+                    <p><i class="fas fa-print"></i> +444 9494125077</p>
+                </div>
+                <!-- Grid column -->
+                <div class="col-sm-2 mt-5" style="color: #eed9d9;">
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Follow Us
+                    </h6>
+                    <ul style="list-style-type: none; padding-left: 0;">
+                        <li class="mb-3">
+                            <a href="#!" class="text-reset" style="text-decoration: none;">
+                                <i class="fab fa-instagram"></i> Instagram
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#!" class="text-reset" style="text-decoration: none;">
+                                <i class="fab fa-facebook"></i> Facebook
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#!" class="text-reset" style="text-decoration: none;">
+                                <i class="fab fa-linkedin"></i> LinkedIn
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#!" class="text-reset" style="text-decoration: none;">
+                                <i class="fab fa-x-twitter"></i> X (Twitter)
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright -->
+    <div class="text-center p-3" style="color:#eed9d9; background-color: #082141;">
+        © 2024 Copyright : All right reserved --
+        <a href="#" style="text-decoration: none; color: #eed9d9;"> Designed
+            & Developed By : Team - TechPro </a>
+    </div>
+    <!-- Copyright -->
+    <!--Footer end-->
+</body>
+
+</html>
